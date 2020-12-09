@@ -3,7 +3,7 @@ export const ES_HOSTS = (process.env.ES_HOSTS || "http://localhost:9200").split(
   ","
 );
 export const ARRANGER_PROJECT_ID = String(
-  process.env.ARRANGER_PROJECT_ID || "ihcc"
+  process.env.ARRANGER_PROJECT_ID || "dac"
 );
 export const ARRANGER_COHORT_CENTRIC_INDEX = String(
   process.env.ARRANGER_COHORT_CENTRIC_INDEX || "demo_index"
