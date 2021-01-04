@@ -1,5 +1,5 @@
 def dockerHubRepo = "ihcc/dac-api"
-def githubRepo = "dac-cohorts/dac-api"
+def githubRepo = "ihcc-cohorts/dac-api"
 def commit = "UNKNOWN"
 def version = "UNKNOWN"
 
