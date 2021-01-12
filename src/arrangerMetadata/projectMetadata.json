@@ -20,6 +20,30 @@
           "type": "Aggregations"
         },
         {
+          "field": "active_recruitment",
+          "show": true,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "includes_50_to_60",
+          "show": true,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "recontact_in_place",
+          "show": true,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "irb_approved_data_sharing",
+          "show": true,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
           "field": "available_data_types__biospecimens",
           "show": true,
           "active": true,
@@ -191,6 +215,17 @@
             "query": null,
             "show": false,
             "accessor": "available_data_types.phenotypic_clinical_data",
+            "jsonPath": null,
+            "sortable": true,
+            "id": null,
+            "type": "boolean"
+          },
+          {
+            "canChangeShow": true,
+            "field": "available_data_types.ehr_data",
+            "query": null,
+            "show": false,
+            "accessor": "available_data_types.ehr_data",
             "jsonPath": null,
             "sortable": true,
             "id": null,
@@ -439,6 +474,42 @@
         "unit": null,
         "displayValues": {},
         "quickSearchEnabled": false,
+        "field": "active_recruitment",
+        "displayName": "Active Recruitment",
+        "active": false,
+        "isArray": false,
+        "rangeStep": 1,
+        "type": "boolean",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "available_data_types.ehr_data",
+        "displayName": "EHR Data",
+        "active": false,
+        "isArray": false,
+        "rangeStep": 1,
+        "type": "boolean",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "available_data_types.longitudinal_data",
+        "displayName": "Longitudinal Data",
+        "active": false,
+        "isArray": false,
+        "rangeStep": 1,
+        "type": "boolean",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
         "field": "available_data_types.environmental_data",
         "displayName": "Environmental Data",
         "active": false,
@@ -465,6 +536,42 @@
         "quickSearchEnabled": false,
         "field": "available_data_types.phenotypic_clinical_data",
         "displayName": "Phenotypic Clinical Data",
+        "active": false,
+        "isArray": false,
+        "rangeStep": 1,
+        "type": "boolean",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "includes_50_to_60",
+        "displayName": "Includes Aged 50 to 60",
+        "active": false,
+        "isArray": false,
+        "rangeStep": 1,
+        "type": "boolean",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "recontact_in_place",
+        "displayName": "Recontacted Participants",
+        "active": false,
+        "isArray": false,
+        "rangeStep": 1,
+        "type": "boolean",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "irb_approved_data_sharing",
+        "displayName": "IRB Approved Data Sharing",
         "active": false,
         "isArray": false,
         "rangeStep": 1,
