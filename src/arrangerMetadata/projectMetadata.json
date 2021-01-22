@@ -44,6 +44,18 @@
           "type": "Aggregations"
         },
         {
+          "field": "collected_imaging",
+          "show": true,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "available_data_types__polygenic_risk_scores",
+          "show": true,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
           "field": "available_data_types__biospecimens",
           "show": true,
           "active": true,
@@ -51,20 +63,20 @@
         },
         {
           "field": "available_data_types__environmental_data",
-          "show": true,
-          "active": true,
+          "show": false,
+          "active": false,
           "type": "Aggregations"
         },
         {
           "field": "available_data_types__genomic_data",
-          "show": true,
-          "active": true,
+          "show": false,
+          "active": false,
           "type": "Aggregations"
         },
         {
           "field": "available_data_types__phenotypic_clinical_data",
-          "show": true,
-          "active": true,
+          "show": false,
+          "active": false,
           "type": "Aggregations"
         },
         {
@@ -215,6 +227,17 @@
             "query": null,
             "show": false,
             "accessor": "available_data_types.phenotypic_clinical_data",
+            "jsonPath": null,
+            "sortable": true,
+            "id": null,
+            "type": "boolean"
+          },
+          {
+            "canChangeShow": true,
+            "field": "available_data_types.longitudinal_data",
+            "query": null,
+            "show": false,
+            "accessor": "available_data_types.longitudinal_data",
             "jsonPath": null,
             "sortable": true,
             "id": null,
@@ -510,6 +533,18 @@
         "unit": null,
         "displayValues": {},
         "quickSearchEnabled": false,
+        "field": "available_data_types.polygenic_risk_scores",
+        "displayName": "Polygenic Risk Scores",
+        "active": false,
+        "isArray": false,
+        "rangeStep": 1,
+        "type": "boolean",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
         "field": "available_data_types.environmental_data",
         "displayName": "Environmental Data",
         "active": false,
@@ -656,6 +691,18 @@
         "quickSearchEnabled": false,
         "field": "countries",
         "displayName": "Countries",
+        "active": false,
+        "isArray": true,
+        "rangeStep": 1,
+        "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "collected_imaging",
+        "displayName": "Collected Imaging Methods",
         "active": false,
         "isArray": true,
         "rangeStep": 1,
