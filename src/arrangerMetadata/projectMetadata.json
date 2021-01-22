@@ -117,8 +117,8 @@
         },
         {
           "field": "laboratory_measures__microbiology",
-          "show": true,
-          "active": true,
+          "show": false,
+          "active": false,
           "type": "Aggregations"
         },
         {
